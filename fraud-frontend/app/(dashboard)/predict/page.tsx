@@ -54,6 +54,8 @@ export default function PredictPage() {
       console.error("Could not parse history", e);
     }
 
+    const status = riskObj.variant === "critical" || riskObj.variant === "high" ? "New" : "Safe Verified";
+
     const newRecord = {
       id: Date.now().toString().substring(5, 13),
       timestamp: new Date().toISOString(),
@@ -63,6 +65,8 @@ export default function PredictPage() {
       riskLevel: riskObj.label,
       riskVariant: riskObj.variant,
       riskScore: res.score,
+      investigationStatus: status,
+      analystAction: "Auto-Scanned",
     };
 
     history.unshift(newRecord);

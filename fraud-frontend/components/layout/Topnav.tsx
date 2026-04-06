@@ -1,8 +1,28 @@
 "use client";
 
-import { Menu, Search, Code } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Menu, Search, Code, ShieldAlert } from "lucide-react";
 
 export default function Topnav() {
+  const [criticalCount, setCriticalCount] = useState(0);
+
+  useEffect(() => {
+    const fetchCriticals = () => {
+      try {
+        const stored = localStorage.getItem('transaction_history');
+        if (stored) {
+          const history = JSON.parse(stored);
+          const count = history.filter((record: any) => 
+            record.investigationStatus !== "Resolved" && record.investigationStatus !== "Safe Verified" && (record.riskVariant === "critical" || record.riskVariant === "high")
+          ).length;
+          setCriticalCount(count);
+        }
+      } catch {}
+    };
+    fetchCriticals();
+    const interval = setInterval(fetchCriticals, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <header className="print:hidden sticky top-0 z-30 flex h-16 shrink-0 items-center gap-x-4 border-b border-slate-800/60 bg-slate-950/80 px-4 shadow-sm backdrop-blur-md sm:gap-x-6 sm:px-6 lg:px-8">
       <button type="button" className="-m-2.5 p-2.5 text-slate-400 hover:text-slate-300 md:hidden">
@@ -19,6 +39,12 @@ export default function Topnav() {
            </div>
         </div>
         <div className="flex items-center gap-x-4 lg:gap-x-6">
+           {criticalCount > 0 && (
+             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-red-500/10 border border-red-500/30 rounded-lg shadow-[0_0_10px_rgba(239,68,68,0.2)]">
+               <ShieldAlert className="w-4 h-4 text-red-400 animate-pulse" />
+               <span className="text-xs font-bold text-red-400">{criticalCount} Active Threats</span>
+             </div>
+           )}
            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-200 transition-colors">
               <Code className="w-5 h-5" />
            </a>

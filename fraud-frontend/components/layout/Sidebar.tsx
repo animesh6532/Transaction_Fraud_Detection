@@ -2,18 +2,39 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, BrainCircuit, History, BellRing, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
+import { LayoutDashboard, BrainCircuit, History, BellRing, ShieldCheck, FolderGit2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/predict", label: "Predictions", icon: BrainCircuit },
-  { href: "/history", label: "Transaction History", icon: History },
   { href: "/alerts", label: "Live Alerts", icon: BellRing },
+  { href: "/cases", label: "Investigations", icon: FolderGit2 },
+  { href: "/history", label: "History Ledger", icon: History },
 ];
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [openCases, setOpenCases] = useState(0);
+
+  useEffect(() => {
+    const fetchCases = () => {
+       try {
+         const stored = localStorage.getItem('transaction_history');
+         if (stored) {
+           const history = JSON.parse(stored);
+           const pending = history.filter((record: any) => 
+               record.investigationStatus === "New" || record.investigationStatus === "Under Review" || record.investigationStatus === "Escalated"
+           ).length;
+           setOpenCases(pending);
+         }
+       } catch {}
+    };
+    fetchCases();
+    const interval = setInterval(fetchCases, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <aside className="print:hidden app-sidebar hidden md:flex flex-col">
@@ -33,9 +54,14 @@ export default function Sidebar() {
           {NAV_ITEMS.map((item) => {
             const isActive = pathname === item.href;
             return (
-              <Link key={item.href} href={item.href} className={cn("sidebar-link group", isActive && "active")}>
+              <Link key={item.href} href={item.href} className={cn("sidebar-link group relative", isActive && "active")}>
                 <item.icon className={cn("w-5 h-5 transition-colors duration-200", isActive ? "text-blue-400" : "text-slate-500 group-hover:text-slate-300")} />
                 <span className="truncate">{item.label}</span>
+                {item.href === "/cases" && openCases > 0 && (
+                   <span className="absolute right-4 top-1/2 -translate-y-1/2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shadow-[0_0_10px_rgba(239,68,68,0.5)]">
+                      {openCases}
+                   </span>
+                )}
               </Link>
             );
           })}
