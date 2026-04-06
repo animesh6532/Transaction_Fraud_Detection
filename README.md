@@ -1,19 +1,26 @@
 <div align="center">
 
-# 💳 Transaction Fraud Detection System
+# 🛡️ Fraud Detect
 
-### ⚡ End-to-End Machine Learning System for Intelligent Fraud Prediction
+### ⚡ AI-Powered Fraud Intelligence & Investigation Platform
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=2500&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=Machine+Learning+for+Fraud+Detection;FastAPI+Backend+%2B+Frontend+Integration;Real-Time+Transaction+Prediction;AI-Powered+Risk+Analysis+System" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=2500&pause=1000&color=00F7FF&center=true&vCenter=true&width=950&lines=AI-Powered+Transaction+Fraud+Intelligence;FastAPI+Backend+%2B+Modern+Frontend;Live+Alerts+%7C+Analytics+%7C+Investigation+Queue;From+Prediction+Model+to+Fraud+Operations+Platform" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python"/>
   <img src="https://img.shields.io/badge/FastAPI-111111?style=for-the-badge&logo=fastapi"/>
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs"/>
   <img src="https://img.shields.io/badge/Scikit--Learn-111111?style=for-the-badge&logo=scikitlearn"/>
-  <img src="https://img.shields.io/badge/Frontend-111111?style=for-the-badge&logo=javascript"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-111111?style=for-the-badge&logo=tailwindcss"/>
   <img src="https://img.shields.io/badge/Machine%20Learning-111111?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-00F7FF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Currency-INR%20₹-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Focus-Fraud%20Operations-E53935?style=for-the-badge"/>
 </p>
 
 </div>
@@ -22,30 +29,36 @@
 
 # 📌 Overview
 
-**Transaction Fraud Detection System** is an end-to-end **Machine Learning + Web Integration** project built to identify whether a financial transaction is **fraudulent** or **legitimate**.
+**Fraud Detect** is an end-to-end **AI-powered fraud intelligence platform** built to detect suspicious financial transactions and transform raw fraud predictions into a more realistic **fraud monitoring + investigation workflow**.
 
-The system combines:
+Unlike a basic fraud detection notebook, this project combines:
 
-* **Data preprocessing**
-* **Fraud classification modeling**
-* **FastAPI backend deployment**
-* **Frontend interaction**
-* **Real-time prediction flow**
+* **Machine Learning fraud prediction**
+* **FastAPI backend integration**
+* **modern frontend dashboard**
+* **risk intelligence visualization**
+* **live fraud alerts**
+* **analytics dashboard**
+* **investigation workflow**
+* **exportable analyst reports**
 
-This project is designed to simulate a **production-style fraud detection pipeline** where users can input transaction details and receive fraud predictions instantly.
+This project is designed to simulate a **real fintech fraud operations platform** rather than just a standalone ML model.
 
 ---
 
 # 🎯 Problem Statement
 
-Financial fraud is one of the most critical challenges in digital transactions. Fraudulent transactions are often:
+Fraudulent transactions are one of the biggest threats in digital financial systems. The challenge is not only to detect fraud, but to:
 
-* **rare**
-* **hard to detect**
-* **hidden among legitimate transactions**
-* **high-impact when missed**
+* identify suspicious patterns quickly
+* surface high-risk transactions clearly
+* support analyst-style review workflows
+* provide meaningful insights for action
+* make fraud detection usable in a real interface
 
-The goal of this project is to use **Machine Learning** to identify suspicious transaction behavior and classify fraud patterns effectively.
+Traditional ML projects often stop at prediction.
+
+**Fraud Detect** goes further by turning fraud detection into a **product-oriented intelligence system**.
 
 ---
 
@@ -53,47 +66,91 @@ The goal of this project is to use **Machine Learning** to identify suspicious t
 
 The main objective of this project is to build a system that can:
 
-* detect fraud based on transaction patterns
-* process and transform raw financial data
-* serve predictions through an API
-* provide an interface for real-time interaction
-* simulate a practical ML deployment workflow
+* predict whether a transaction is fraudulent or legitimate
+* process and transform transaction data through an ML pipeline
+* expose predictions through a backend API
+* provide a modern dashboard-driven frontend
+* generate fraud alerts based on risk conditions
+* support investigation-style case workflows
+* export fraud intelligence data for reporting
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-User Input / Transaction Data
-            │
-            ▼
-   Frontend Interface
-            │
-            ▼
-      FastAPI Backend
-            │
-            ▼
- Preprocessing + Scaling Layer
-            │
-            ▼
- Trained Fraud Detection Model
-            │
-            ▼
- Fraud / Legitimate Prediction
+User / Analyst Input
+          │
+          ▼
+  Fraud Detect Frontend
+          │
+          ▼
+   FastAPI Backend API
+          │
+          ▼
+Preprocessing + Scaling Layer
+          │
+          ▼
+  Trained Fraud ML Model
+          │
+          ▼
+ Prediction + Risk Scoring
+          │
+          ▼
+ Alerts / Analytics / Cases / Reports
 ```
 
 ---
 
-# ✨ Key Features
+# ✨ Core Features
 
-* 🔍 **Fraud Detection Prediction**
-* ⚙️ **FastAPI Backend Integration**
-* 🌐 **Frontend User Interface**
-* 📊 **Data Preprocessing Pipeline**
-* 🧠 **Trained ML Model**
-* ⚡ **Real-Time Prediction Flow**
-* 🧪 **Notebook-Based Experimentation**
-* 📦 **Saved Model + Scaler + Column Artifacts**
+## 🔍 Fraud Intelligence Engine
+
+* Real transaction fraud prediction
+* Fraud / Safe classification
+* Risk category evaluation
+* AI-style suspicious pattern insights
+
+## 📊 Fraud Monitoring Dashboard
+
+* Premium dashboard interface
+* Transaction activity overview
+* Fraud vs Safe monitoring flow
+* Risk-focused product experience
+
+## 🚨 Live Alerts System
+
+* Real alert generation from suspicious predictions
+* Risk-based alert severity
+* High-risk / critical case visibility
+* Monitoring-style alert workflow
+
+## 🗂️ Investigation Queue
+
+* Dedicated case review flow
+* Analyst-style transaction investigation
+* Review / escalate / status workflow
+* Operational fraud case management
+
+## 📈 Analytics Layer
+
+* Risk distribution visualization
+* Fraud activity monitoring
+* Transaction behavior overview
+* Dashboard-style intelligence metrics
+
+## 📄 Export & Reporting
+
+* CSV export for transaction history
+* Report export for fraud analysis
+* Analyst-friendly result sharing
+* Investigation-ready summaries
+
+## 🇮🇳 INR-First Product Design
+
+* Indian currency formatting (₹ / INR)
+* Finance-oriented amount presentation
+* Region-relevant fraud monitoring feel
 
 ---
 
@@ -102,13 +159,18 @@ User Input / Transaction Data
 ## 💻 Languages
 
 * Python
-* JavaScript
+* TypeScript / JavaScript
 * HTML
 * CSS
 
 ## ⚙️ Backend
 
 * FastAPI
+
+## 🎨 Frontend
+
+* Next.js
+* Tailwind CSS
 
 ## 🤖 Machine Learning / Data Science
 
@@ -131,15 +193,17 @@ User Input / Transaction Data
 ```bash
 Transaction_Fraud_Detection/
 │
-├── backend_api/              # FastAPI backend
-├── fraud-frontend/           # Frontend UI
-├── fraud_model.pkl           # Trained ML model
-├── scaler.pkl                # Saved feature scaler
-├── columns.json              # Feature columns
-├── numerical_cols.json       # Numerical feature metadata
-├── Untitled-1.ipynb          # Model experimentation notebook
+├── backend_api/               # FastAPI backend + fraud prediction API
+├── fraud-frontend/            # Next.js frontend dashboard
+├── fraud_model.pkl            # Trained ML fraud model
+├── scaler.pkl                 # Saved feature scaler
+├── columns.json               # Feature columns
+├── numerical_cols.json        # Numerical feature metadata
+├── Untitled-1.ipynb           # Model experimentation notebook
 └── README.md
 ```
+
+> 🔧 Recommended cleanup: rename `Untitled-1.ipynb` to something more professional like `fraud_model_training.ipynb`
 
 ---
 
@@ -147,26 +211,117 @@ Transaction_Fraud_Detection/
 
 ## 1️⃣ Data Processing
 
-* Raw transaction data is cleaned and transformed
+* Transaction data is cleaned and transformed
 * Relevant features are selected
-* Numerical values are scaled for model input
+* Numerical values are scaled before inference
 
 ## 2️⃣ Model Training
 
-* Fraud classification model is trained using processed transaction data
-* Fraud and legitimate transactions are learned through supervised ML workflow
+* Fraud classification model is trained using transaction behavior data
+* Fraudulent vs legitimate patterns are learned through supervised ML
 
 ## 3️⃣ Model Serialization
 
 * Trained model and preprocessing artifacts are saved for deployment
 
-## 4️⃣ API Deployment
+## 4️⃣ Backend API Integration
 
 * FastAPI serves the fraud prediction endpoint
+* Frontend communicates with backend for live predictions
 
-## 5️⃣ Frontend Integration
+## 5️⃣ Fraud Intelligence Layer
 
-* Users interact through the frontend UI and receive prediction output
+* Prediction output is converted into:
+
+  * fraud status
+  * risk level
+  * AI insights
+  * live alerts
+  * case management flow
+
+## 6️⃣ Dashboard Experience
+
+* Analysts / users interact with the dashboard
+* Transactions can be reviewed, tracked, exported, and monitored
+
+---
+
+# 🖥️ Product Experience
+
+Fraud Detect is structured more like a **fraud operations platform** than a simple ML app.
+
+## Main Product Flow
+
+```text
+Landing Page
+   ↓
+Dashboard Command Center
+   ↓
+Prediction Workspace
+   ↓
+Risk Intelligence Output
+   ↓
+Live Alerts / Investigation Queue / Analytics
+```
+
+---
+
+# 🚀 Key Product Modules
+
+## 🏠 3D Landing Page
+
+A futuristic fintech-inspired landing experience introducing the platform before entering the dashboard.
+
+## 📊 Dashboard Command Center
+
+A central monitoring space for:
+
+* fraud metrics
+* quick actions
+* activity insights
+* risk overview
+
+## 🧪 Prediction Workspace
+
+A premium AI fraud analysis page where users can:
+
+* submit transaction parameters
+* trigger fraud analysis
+* receive intelligence-style outputs
+
+## 🚨 Live Alerts Console
+
+A monitoring layer for suspicious and high-risk transactions.
+
+## 🗂️ Cases / Investigation Workflow
+
+A dedicated operational view for reviewing suspicious or escalated fraud cases.
+
+## 📈 Analytics Dashboard
+
+A more productized view of fraud behavior and system activity.
+
+---
+
+# 📸 Suggested Screenshots
+
+> Add your real project screenshots here to make the repo much more impressive.
+
+Recommended sections:
+
+* `Landing Page Preview`
+* `Dashboard Preview`
+* `Prediction Workspace`
+* `Live Alerts System`
+* `Investigation Queue`
+* `Analytics Dashboard`
+
+Example:
+
+```md
+## 📸 Dashboard Preview
+![Dashboard](./screenshots/dashboard.png)
+```
 
 ---
 
@@ -187,7 +342,7 @@ cd Transaction_Fraud_Detection
 python -m venv venv
 ```
 
-### Activate it:
+### Activate it
 
 **Windows**
 
@@ -203,13 +358,13 @@ source venv/bin/activate
 
 ---
 
-## 3. Install dependencies
+## 3. Install backend dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> If `requirements.txt` is not yet complete, install manually based on your environment.
+> If your backend dependencies are inside a subfolder, install from the correct location.
 
 ---
 
@@ -220,77 +375,91 @@ cd backend_api
 uvicorn main:app --reload
 ```
 
-> If your FastAPI entry file has a different name, replace `main:app` accordingly.
+> If your FastAPI entry file uses a different name, replace `main:app` accordingly.
 
 ---
 
 ## 5. Run the frontend
 
-Open the frontend folder and launch the interface based on your frontend setup.
-
-Example:
+Open a new terminal:
 
 ```bash
 cd fraud-frontend
+npm install
+npm run dev
 ```
 
-Then run it according to your frontend structure.
+Then open:
+
+```text
+http://localhost:3000
+```
 
 ---
 
 # 📡 Example Use Case
 
-A user enters transaction details through the frontend such as:
+A user submits transaction-related details through the frontend.
 
-* transaction amount
-* transaction type
-* account behavior / related fields
-* transaction-related attributes
+The system then:
 
-The system:
+1. sends the data to the backend API
+2. preprocesses the input
+3. scales the required features
+4. runs the trained fraud model
+5. returns a fraud prediction
+6. generates a risk interpretation
+7. surfaces the result inside the fraud intelligence dashboard
 
-1. preprocesses the data
-2. scales the required features
-3. sends it to the trained model
-4. returns a prediction:
+Example result:
 
 ```text
 Prediction: Fraudulent Transaction
+Risk Level: High
+Action: Manual Review Recommended
 ```
 
 or
 
 ```text
 Prediction: Legitimate Transaction
+Risk Level: Low
+Action: No Immediate Risk Detected
 ```
 
 ---
 
-# 📈 Why This Project Matters
+# 🧠 Why This Project Stands Out
 
-This project is valuable because it demonstrates:
+This project is stronger than a standard ML fraud repo because it demonstrates:
 
 * practical **Machine Learning deployment**
-* **backend + ML integration**
-* use of **saved preprocessing artifacts**
-* ability to move from **notebook to usable application**
-* real-world understanding of **fraud detection systems**
+* **FastAPI + frontend integration**
+* movement from **notebook to usable product**
+* product thinking beyond just model output
+* fraud monitoring and investigation workflow design
+* dashboard-style intelligence presentation
 
-It is not just a model — it is a **system-oriented ML application**.
+It is not just a fraud model.
+
+It is an attempt to build a more complete:
+
+## **AI Fraud Intelligence Platform**
 
 ---
 
 # 🔥 Future Improvements
 
-Planned upgrades for this project:
+Planned next-level upgrades for Fraud Detect:
 
-* 📊 Add model performance dashboard
-* ☁️ Deploy backend and frontend online
-* 🔐 Add user authentication / access control
-* 📈 Add probability / confidence score
-* 🧠 Improve fraud explainability
-* 🧪 Compare multiple ML models
-* 🐳 Dockerize the full project
+* 🗄️ Database-backed persistent case management
+* 🔔 Real-time WebSocket live alerts
+* 👤 Analyst authentication / role access
+* 📊 Advanced fraud analytics engine
+* 🧠 Better explainable AI scoring
+* ☁️ Full deployment (Frontend + Backend)
+* 🐳 Dockerized setup
+* 📡 API documentation / Swagger enhancement
 
 ---
 
@@ -308,6 +477,6 @@ AI/ML Developer | Software Developer | Backend Builder
 
 <div align="center">
 
-### ⚡ Turning Machine Learning into Real-World Systems ⚡
+## ⚡ From Fraud Prediction to Fraud Intelligence ⚡
 
 </div>
