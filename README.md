@@ -213,65 +213,15 @@ A visual walkthrough of the **Fraud Detect Intelligence Platform**.
 
 ---
 
-## 🏠 Landing Page
+# 🎥 Product Demo
 
-The futuristic landing experience introduces the platform as an enterprise-grade fraud intelligence system.
-
-<p align="center">
-  <img src="./screenshots/landing-page.png" alt="Landing Page" width="100%" />
-</p>
-
----
-
-## 🧪 Prediction Workspace
-
-The fraud prediction console allows users to input transaction metadata and receive AI-powered fraud risk analysis in real time.
+A quick walkthrough of the **Fraud Detect Intelligence Platform** in action.
 
 <p align="center">
-  <img src="./screenshots/prediction-console.png" alt="Prediction Workspace" width="100%" />
+  <img src="./screenshots/demo.gif" alt="Fraud Detect Demo" width="100%" />
 </p>
-
 ---
 
-## 📄 Exportable Fraud Intelligence Report
-
-The platform supports report export for analyst review and documentation workflows.
-
-<p align="center">
-  <img src="./screenshots/report-export.png" alt="Fraud Report Export" width="100%" />
-</p>
-
----
-
-## 📊 Security Dashboard
-
-The analytics dashboard provides high-level monitoring of transaction scans, risk distribution, and system fraud prevention metrics.
-
-<p align="center">
-  <img src="./screenshots/dashboard.png" alt="Dashboard" width="100%" />
-</p>
-
----
-
-## 🚨 Live Alerts Console
-
-Suspicious transactions are surfaced through a real-time alert management interface for rapid fraud interception.
-
-<p align="center">
-  <img src="./screenshots/live-alerts.png" alt="Live Alerts" width="100%" />
-</p>
-
----
-
-## 🗂️ Investigation Queue
-
-Flagged fraud cases are routed into an investigation workflow where analysts can review, escalate, or resolve suspicious transactions.
-
-<p align="center">
-  <img src="./screenshots/investigation-queue.png" alt="Investigation Queue" width="100%" />
-</p>
-
----
 
 # ⚙️ Workflow
 
