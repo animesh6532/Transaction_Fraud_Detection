@@ -76,6 +76,15 @@ The main objective of this project is to build a system that can:
 
 ---
 
+
+# 🎥 Product Demo
+
+A quick walkthrough of the **Fraud Detect Intelligence Platform** in action.
+
+<p align="center">
+  <img src="./screenshots/demo.gif" alt="Fraud Detect Demo" width="100%" />
+</p>
+
 # 🏗️ System Architecture
 
 ```text
@@ -211,15 +220,7 @@ Transaction_Fraud_Detection/
 
 A visual walkthrough of the **Fraud Detect Intelligence Platform**.
 
----
 
-# 🎥 Product Demo
-
-A quick walkthrough of the **Fraud Detect Intelligence Platform** in action.
-
-<p align="center">
-  <img src="./screenshots/demo.gif" alt="Fraud Detect Demo" width="100%" />
-</p>
 ---
 
 
